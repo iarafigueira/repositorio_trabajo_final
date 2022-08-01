@@ -1,0 +1,14 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.img-torta {
+  width: 500px;
+  height: 500px; }
