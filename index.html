@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
@@ -12,29 +15,53 @@
 </head>
 
 <body>
-    <h1>Bienvenido a la tienda de tortas</h1>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tienda de tortas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Shop Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item ">
+                        <button class="nav-link text-body " id="abrir" href="#">Carrito <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!--     <div class="container-flex">
-        <div class="hijoflex"><img src="./img/alfacookie.jpg" alt="Torta Alfacookie" class="img-torta"></div>
-        <div class="hijoflex"><img src="./img/cheesecake.jpg" alt="Torta Cheesecake de frutos rojos" class="img-torta"></div>
-        <div class="hijoflex"><img src="./img/chocotortaoreo.jpg" alt="Torta Chocotorta Oreo" class="img-torta"></div>
-        <div class="hijoflex"><img src="./img/ferrero.jpg" alt="Torta Ferrero Nutella" class="img-torta"></div>
-        <div class="hijoflex"><img src="./img/chocotorta.jpg" alt="Torta Chocotorta" class="img-torta"></div>
-        <div class="hijoflex"><img src="./img/marquise.jpg" alt="Torta Marquise Beverly" class="img-torta"></div>
-        <div class="hijoflex"><img src="./img/megabrownie.jpg" alt="Torta Mega Brownie" class="img-torta"></div>
-        <div class="hijoflex"><img src="./img/redvelvet.jpg" alt="Torta Red Velvet" class="img-torta"></div>
-    </div>
+    <h1>Tienda de tortas</h1>
 
- -->
-
-    <div id="productos">
-
-
-    </div>
+    <main id="contenedor-de-productos">
+        <div class="contenedor-modal">
+            <div class="carrito-modal">
+                <h2>Carrito de compras</h2>
+                <button class="nav-link text-body" id="cerrar" href="#">Cerrar</a>
+                    <div id="compra-usuario"></div>
+            </div>
+        </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <script src="./js/productos.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
 
