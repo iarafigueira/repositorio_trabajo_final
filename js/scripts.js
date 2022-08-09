@@ -51,8 +51,8 @@ mostrarProductos(productos);
 
 const modal = document.querySelector(".contenedor-modal");
 const abrirCarrito = document.getElementById("abrir");
-const cerrarCarrito = document.getElementById("cerrar)");
-const modalCarrito = document.queryselector(".carrito-modal");
+const cerrarCarrito = document.getElementById("cerrar");
+const modalCarrito = document.querySelector(".carrito-modal");
 
 abrirCarrito.addEventListener("click", () => {
   modal.classList.toggle("modal-visible");
